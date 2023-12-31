@@ -1,0 +1,399 @@
+export const Rundown = [
+  {
+    PageNum: 'A1',
+    CG: ['THE BAHAMAS TONIGHT', 'WWW.ZNSBAHAMAS.COM'],
+    Title: '7PM HEADLINES-SOT',
+  },
+  {
+    PageNum: 'A2',
+    CG: [],
+    Title: 'BTC BUMPER-SOT',
+  },
+  {
+    PageNum: 'A3',
+    CG: ['2023 FIRST QUARTER CRIME STATS', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'COP CRIME STATS-LEAD',
+  },
+  {
+    PageNum: 'A3',
+    CG: [
+      '2023 FIRST QUARTER CRIME STATS',
+      'CARLA PALMER | C.PALMER@ZNSBAHAMAS.COM',
+    ],
+    Title: 'COP CRIME STATS-LEAD',
+  },
+  {
+    PageNum: 'A3',
+    CG: [
+      '2023 FIRST QUARTER CRIME STATS',
+      'COMMISSIONER CLAYTON FERNANDER | RBPF',
+    ],
+    Title: 'COP CRIME STATS-LEAD',
+  },
+  {
+    PageNum: 'A4',
+    CG: ['WANTED: OMAR THOMPSON JR.', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'WANTED OMAR THOMPSON-VO',
+  },
+  {
+    PageNum: 'A5',
+    CG: [],
+    Title: 'MURDERED BROTHERS FAMILY-LEAD',
+  },
+  {
+    PageNum: 'A6',
+    CG: [],
+    Title: 'YINKA KILLER ARRAIGNED-VO',
+  },
+  {
+    PageNum: 'A7',
+    CG: ['BAIL MANAGEMENT SYSTEM UPDATE', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'CJ BAIL MGMT SYSTEM-SOT',
+  },
+  {
+    PageNum: 'A7',
+    CG: ['BAIL MANAGEMENT SYSTEM UPDATE', 'SIR IAN WINDER | CHIEF JUSTICE'],
+    Title: 'CJ BAIL MGMT SYSTEM-SOT',
+  },
+  {
+    PageNum: 'A8',
+    CG: ['CONCERN OVER RECENT SPIKE IT MURDERS', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'NS MIN MUNROE CRIME SPIKE-SOT1',
+  },
+  {
+    PageNum: 'A8',
+    CG: [
+      'CONCERN OVER RECENT SPIKE IT MURDERS',
+      'HON. WAYNE MUNROE | MINISTER OF NATIONAL SECURITY',
+    ],
+    Title: 'NS MIN MUNROE CRIME SPIKE-SOT1',
+  },
+  {
+    PageNum: 'A9',
+    CG: [],
+    Title: 'NS MIN MUNROE CRIME SPIKE-SOT2',
+  },
+  {
+    PageNum: 'A10',
+    CG: [],
+    Title: 'COP MP RAPE ALLEGATION-SOT',
+  },
+  {
+    PageNum: 'A11',
+    CG: [
+      'FEMALE CABINET MINISTER WEIGHS IN ON MP RAPE ALLEGATION',
+      'WWW.ZNSBAHAMAS.COM',
+    ],
+    Title: 'JOBETH RAPE ALLEGATION-LEAD',
+  },
+  {
+    PageNum: 'A11',
+    CG: [
+      'FEMALE CABINET MINISTER WEIGHS IN ON MP RAPE ALLEGATION',
+      'CLEOPATRA MURPHY | C.MURPHY@ZNSBAHAMAS.COM',
+    ],
+    Title: 'JOBETH RAPE ALLEGATION-LEAD',
+  },
+  {
+    PageNum: 'A11',
+    CG: [
+      'FEMALE CABINET MINISTER WEIGHS IN ON MP RAPE ALLEGATION',
+      'HON. JOBETH COLEBY-DAVIS | MINISTER OF TRANSPORT AND HOUSING',
+    ],
+    Title: 'JOBETH RAPE ALLEGATION-LEAD',
+  },
+  {
+    PageNum: 'A12',
+    CG: ['MORE NEWS IN A MOMENT...', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'A BLOCK TEASER-ONCAM',
+  },
+  {
+    PageNum: 'A13',
+    CG: [],
+    Title: 'BUMPER TO BREAK-BUMPER',
+  },
+  {
+    PageNum: 'B0',
+    CG: [],
+    Title: 'BREAK 1',
+  },
+  {
+    PageNum: 'B1',
+    CG: [],
+    Title: 'RBC BILLBOARD-BUMPER',
+  },
+  {
+    PageNum: 'B2',
+    CG: [],
+    Title: 'HOA SIGNING MARINA-LEAD',
+  },
+  {
+    PageNum: 'B3',
+    CG: [
+      'CENTRAL BANK OF THE BAHAMAS AMENDMENT BILL 2023',
+      'WWW.ZNSBAHAMAS.COM',
+    ],
+    Title: 'HOUSE PM C BANK BILL-SOT1',
+  },
+  {
+    PageNum: 'B3',
+    CG: [
+      'CENTRAL BANK OF THE BAHAMAS AMENDMENT BILL 2023',
+      'HON. PHILIP DAVIS KC | PRIME MINISTER',
+    ],
+    Title: 'HOUSE PM C BANK BILL-SOT1',
+  },
+  {
+    PageNum: 'B4',
+    CG: [],
+    Title: 'HOUSE PM C BANK BILL-SOT2',
+  },
+  {
+    PageNum: 'B5',
+    CG: ['ARMED FORCES PRE-RETIREMENT WORKSHOP', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'POLICE PRE RETIREES WSHOP-VO',
+  },
+  {
+    PageNum: 'B6',
+    CG: [
+      'ARMED FORCES PRE-RETIREMENT WORKSHOP',
+      'LEROY MAJOR | BAIC EXECUTIVE CHAIRMAN',
+    ],
+    Title: 'POLICE PRE RETIREES WSHOP-SOTVO',
+  },
+  {
+    PageNum: 'B7',
+    CG: [
+      'ARMED FORCES PRE-RETIREMENT WORKSHOP',
+      'HON. WAYNE MUNROE | MINISTER OF NATIONAL SECURITY',
+    ],
+    Title: 'POLICE PRE RETIREES WSHOP-SOT2',
+  },
+  {
+    PageNum: 'B8',
+    CG: ['WEEKLY POLL QUESTION', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'WEEKLY POLL QUESTION-TOP GRPHX',
+  },
+  {
+    PageNum: 'B9',
+    CG: ['STAY WITH US...', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'ON CAMERA TEASE-SCRIPT',
+  },
+  {
+    PageNum: 'C0',
+    CG: [],
+    Title: 'BREAK 2',
+  },
+  {
+    PageNum: 'C1',
+    CG: [],
+    Title: 'RED CROSS FAIR-LIVE',
+  },
+  {
+    PageNum: 'C2',
+    CG: ['BCB BLOOD DRIVE', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'ZNS BLOOD DRIVE-L',
+  },
+  {
+    PageNum: 'C2',
+    CG: ['BCB BLOOD DRIVE', 'JIMENITA SWAIN | J.SWAIN@ZNSBAHAMAS.COM'],
+    Title: 'ZNS BLOOD DRIVE-L',
+  },
+  {
+    PageNum: 'C2',
+    CG: ['BCB BLOOD DRIVE', 'DWAINE WALLACE | PUBLIC RELATIONS'],
+    Title: 'ZNS BLOOD DRIVE-L',
+  },
+  {
+    PageNum: 'C3',
+    CG: [],
+    Title: 'BREAK SOCIAL MEDIA-TOP GRPHX',
+  },
+  {
+    PageNum: 'D0',
+    CG: [],
+    Title: 'BREAK 3',
+  },
+  {
+    PageNum: 'D1',
+    CG: [],
+    Title: 'FAMILY ISLAND INTRO -BUMPER',
+  },
+  {
+    PageNum: 'D2',
+    CG: [],
+    Title: 'LONG ISLAND JAWS OF LIFE-VO',
+  },
+  {
+    PageNum: 'D3',
+    CG: [],
+    Title: 'LONG ISLAND JAWS OF LIFE-SOTVO',
+  },
+  {
+    PageNum: 'D4',
+    CG: [],
+    Title: 'LONG ISLAND JAWS OF LIFE-SOT2',
+  },
+  {
+    PageNum: 'D5',
+    CG: ['FAMILY ISLAND WEATHER', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'FAMILY ISLAND TOWER CAM SHOT-WXWALL',
+  },
+  {
+    PageNum: 'D5',
+    CG: ['FAMILY ISLAND WEATHER', 'BASIL DEAN | CHIEF METEOROLOGIST'],
+    Title: 'FAMILY ISLAND TOWER CAM SHOT-WXWALL',
+  },
+  {
+    PageNum: 'E0',
+    CG: [],
+    Title: 'BREAK 4',
+  },
+  {
+    PageNum: 'E1',
+    CG: [],
+    Title: 'SPORTS INTRO-BUMPER',
+  },
+  {
+    PageNum: 'E2',
+    CG: [],
+    Title: 'SPORTS GREEN SCREEN-GPX',
+  },
+  {
+    PageNum: 'E3',
+    CG: [],
+    Title: 'SPORTS MONDAY-PKG',
+  },
+  {
+    PageNum: 'E4',
+    CG: [],
+    Title: 'SPORTS EXTRO-BUMPER',
+  },
+  {
+    PageNum: 'F0',
+    CG: [],
+    Title: 'BREAK 5',
+  },
+  {
+    PageNum: 'F1',
+    CG: ['FINAL LOOK AT WEATHER', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'WEATHER 7 DAY INTRO-GRAPHIC',
+  },
+  {
+    PageNum: 'F1',
+    CG: ['FINAL LOOK AT WEATHER', 'BASIL DEAN | CHIEF METEOROLOGIST'],
+    Title: 'WEATHER 7 DAY INTRO-GRAPHIC',
+  },
+  {
+    PageNum: 'F2',
+    CG: [],
+    Title: 'CLOSING-SCRIPT',
+  },
+  {
+    PageNum: 'F3',
+    CG: [],
+    Title: 'END OF NEWS',
+  },
+  {
+    CG: [],
+  },
+  {
+    PageNum: 'Z1',
+    CG: ['DIGITAL COURT REPORTING SYSTEM RELAUNCH', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'DIGITAL COURT REPORTING-LEAD',
+  },
+  {
+    PageNum: 'Z1',
+    CG: [
+      'DIGITAL COURT REPORTING SYSTEM RELAUNCH',
+      'FERN CAREY | F.CAREY@ZNSBAHAMAS.COM',
+    ],
+    Title: 'DIGITAL COURT REPORTING-LEAD',
+  },
+  {
+    PageNum: 'Z1',
+    CG: [
+      'DIGITAL COURT REPORTING SYSTEM RELAUNCH',
+      'SIR IAN WINDER | CHIEF JUSTICE',
+    ],
+    Title: 'DIGITAL COURT REPORTING-LEAD',
+  },
+  {
+    PageNum: 'Z1',
+    CG: [
+      'DIGITAL COURT REPORTING SYSTEM RELAUNCH',
+      'SIR BRIAN MOREE | JUSTICE OF APPEAL',
+    ],
+    Title: 'DIGITAL COURT REPORTING-LEAD',
+  },
+  {
+    PageNum: 'Z1',
+    CG: [
+      'DIGITAL COURT REPORTING SYSTEM RELAUNCH',
+      'BRIDGET PREMONT | U.S. EMBASSY (NASSAU) INL DIRECTOR',
+    ],
+    Title: 'DIGITAL COURT REPORTING-LEAD',
+  },
+  {
+    PageNum: 'Z2',
+    CG: ['CLEVELAND ENEAS PRIMARY CELEBRATES EARTH DAY', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'CLEVELAND ENEAS EARTH DAY-L',
+  },
+  {
+    PageNum: 'Z2',
+    CG: [
+      'CLEVELAND ENEAS PRIMARY CELEBRATES EARTH DAY',
+      'CARLA PALMER | C.PALMER@ZNSBAHAMAS.COM',
+    ],
+    Title: 'CLEVELAND ENEAS EARTH DAY-L',
+  },
+  {
+    PageNum: 'Z2',
+    CG: [
+      'CLEVELAND ENEAS PRIMARY CELEBRATES EARTH DAY',
+      'HON. MYLES LARODA | O.P.M. STATE MINISTER',
+    ],
+    Title: 'CLEVELAND ENEAS EARTH DAY-L',
+  },
+  {
+    PageNum: 'Z2',
+    CG: [
+      'CLEVELAND ENEAS PRIMARY CELEBRATES EARTH DAY',
+      'HON. GLENYS HANNA-MARTIN | MINISTER OF EDUCATION',
+    ],
+    Title: 'CLEVELAND ENEAS EARTH DAY-L',
+  },
+  {
+    PageNum: 'Z3',
+    CG: ['REVEREND TURNED AUTHOR', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'HISTORY BOOKS-VO',
+  },
+  {
+    PageNum: 'Z4',
+    CG: ['REVEREND TURNED AUTHOR', 'REV. DR. PATRICK PAUL | AUTHOR'],
+    Title: 'HISTORY BOOKS-SOTVO',
+  },
+  {
+    PageNum: 'Z5',
+    CG: [],
+    Title: 'HISTORY BOOKS-SOT2',
+  },
+  {
+    PageNum: 'Z6',
+    CG: ['BAMSI CAMPUS COMPLETION', 'WWW.ZNSBAHAMAS.COM'],
+    Title: 'BAMSI CAMPUS COMPLETION-VO',
+  },
+  {
+    PageNum: 'Z7',
+    CG: [
+      'BAMSI CAMPUS COMPLETION',
+      'HON. CLAY SWEETING | MINISTER OF AGRICULTURE',
+    ],
+    Title: 'BAMSI CAMPUS COMPLETION-SOTVO',
+  },
+  {
+    PageNum: 'Z8',
+    CG: [],
+    Title: 'BAMSI CAMPUS COMPLETION-SOT2',
+  },
+]
