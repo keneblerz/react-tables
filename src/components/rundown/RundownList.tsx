@@ -1,4 +1,3 @@
-import { MouseEvent } from 'react'
 import { Grid } from '@mui/material'
 import { RundownListObject } from '../../configs/enps-interface'
 import ListLineItem from './ListLineItem'
@@ -12,7 +11,7 @@ const RundownList = (props: Props) => {
   /** Function that retrieves the updated list after interval and returns a new rundownList */
 
   return (
-    <Grid container spacing={1}>
+    <Grid container justifyContent="flex-end" spacing={1}>
       {props.rundownList.map((r) => {
         return (
           <ListLineItem

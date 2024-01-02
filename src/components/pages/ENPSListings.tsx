@@ -1,15 +1,15 @@
-import { useState, MouseEvent, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { Main, RetrieveActiveRundowns } from '../../configs/utilities'
 import { listResponse } from '../../configs/lists'
 import RundownList from '../rundown/RundownList'
 import { RundownListObject } from '../../configs/enps-interface'
-import { useParams } from 'react-router-dom'
+import { Container, Toolbar } from '@mui/material'
 
 const RunList = () => {
   //Grab our list from the server
   const updatedList: RundownListObject[] = useMemo(
     () => RetrieveActiveRundowns(listResponse),
-    [listResponse]
+    []
   )
 
   //List should truncate every rundown that isn't MosActive.
@@ -20,32 +20,32 @@ const RunList = () => {
   })
 
   //Initialize listItem
-  const [listItem, setListItem] = useState(() => {
-    const o: RundownListObject = {
-      RundownName: '',
-      Guid: '',
-      IsMosActive: false,
-      Index: 0,
-    }
-    return o
-  })
+  // const [listItem, setListItem] = useState(() => {
+  //   const o: RundownListObject = {
+  //     RundownName: '',
+  //     Guid: '',
+  //     IsMosActive: false,
+  //     Index: 0,
+  //   }
+  //   return o
+  // })
 
-  //I don't think i need this anymore...
-  function handleRowClick(event: MouseEvent<HTMLAnchorElement>) {
-    const target = event.target as HTMLAnchorElement
-    const id: number = Number(target.id)
+  // //I don't think i need this anymore...
+  // function handleRowClick(event: MouseEvent<HTMLAnchorElement>) {
+  //   const target = event.target as HTMLAnchorElement
+  //   const id: number = Number(target.id)
 
-    if (id >= 0) {
-      setListItem(() => {
-        const o = updatedList[id]
-        return o
-      })
+  //   if (id >= 0) {
+  //     setListItem(() => {
+  //       const o = updatedList[id]
+  //       return o
+  //     })
 
-      /** Grab guid number and retrieve rundown */
-    } else {
-      console.log('ID Undefined')
-    }
-  }
+  //     /** Grab guid number and retrieve rundown */
+  //   } else {
+  //     console.log('ID Undefined')
+  //   }
+  // }
 
   useEffect(() => {
     try {
@@ -59,7 +59,10 @@ const RunList = () => {
 
   return (
     <Main>
-      <RundownList rundownList={listObjects} />
+      <Toolbar />
+      <Container maxWidth={false} sx={{ mt: 4, mb: 4 }}>
+        <RundownList rundownList={listObjects} />
+      </Container>
     </Main>
   )
 }

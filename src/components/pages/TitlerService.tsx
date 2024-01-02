@@ -4,6 +4,7 @@ import { FakeRundownArray } from '../../configs/constants'
 import { GetCgElement, GetRundown, Main } from '../../configs/utilities'
 import { RundownObject } from '../../configs/enps-interface'
 import { useParams } from 'react-router-dom'
+import { Container, Toolbar } from '@mui/material'
 
 export const TitlerService = () => {
   const { guid } = useParams()
@@ -69,11 +70,14 @@ export const TitlerService = () => {
 
   return (
     <Main>
-      <Rundown
-        rundown={rundownData}
-        rowOnClick={handleRowClick}
-        playOnClick={playOnClick}
-      />
+      <Toolbar />
+      <Container maxWidth={false} sx={{ mt: '1em', mb: `1em` }}>
+        <Rundown
+          rundown={rundownData}
+          rowOnClick={handleRowClick}
+          playOnClick={playOnClick}
+        />
+      </Container>
     </Main>
   )
 }

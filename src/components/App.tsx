@@ -1,17 +1,12 @@
 import '../css/App.css'
 import React from 'react'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  useParams,
-} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { TitlerService } from './pages/TitlerService'
+import Dashboard from './pages/Deshboard'
 
 import Home from './pages/Home'
 import NavBar from './NavBar'
-import { Divider } from '@mui/material'
 import RunList from './pages/ENPSListings'
 
 const queryClient = new QueryClient()
@@ -21,38 +16,27 @@ interface Props {
 }
 
 function App(props: Props) {
-  const { window } = props
-  const [openStatus, setOpen] = React.useState(false)
-  // const { guid } = useParams()
+  // const { window } = props
+  // const [openStatus, setOpen] = React.useState(false)
 
-  const handleDrawerOpen = () => {
-    setOpen(true)
-  }
+  // const handleDrawerToggle = () => {
+  //   setOpen((prevState) => !prevState)
+  // }
 
-  const handleDrawerClose = () => {
-    setOpen(false)
-  }
-
-  const handleDrawerToggle = () => {
-    setOpen((prevState) => !prevState)
-  }
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined
+  // const container =
+  //   window !== undefined ? () => window().document.body : undefined
 
   return (
     <Router>
       <NavBar
-        openStatus={openStatus}
-        handleDrawerClose={handleDrawerClose}
-        handleDrawerOpen={handleDrawerOpen}
+      // openStatus={openStatus}
+      // handleDrawerToggle={handleDrawerToggle}
       />
-      <Divider />
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         <Route
-          path="/listing"
+          path="/"
           element={
             <QueryClientProvider client={queryClient}>
               <RunList />
@@ -67,6 +51,14 @@ function App(props: Props) {
             </QueryClientProvider>
           }
         />
+        {/* <Route
+          path="/dashboard"
+          element={
+            <QueryClientProvider client={queryClient}>
+              <Dashboard />
+            </QueryClientProvider>
+          }
+        /> */}
       </Routes>
     </Router>
   )

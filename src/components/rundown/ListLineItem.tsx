@@ -1,4 +1,3 @@
-import { MouseEvent } from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import {
   Card,
@@ -27,9 +26,9 @@ const ListLineItem = (props: Props) => {
 
   return (
     <Grid
+      justifyContent="flex-end"
       key={`${props.listObject.Index}`}
       id={`${props.listObject.Index}`}
-      sx={{ height: 'auto' }}
       item
       xs={12}
     >

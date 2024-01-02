@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useState } from 'react'
 import { styled, useTheme } from '@mui/material/styles'
 import Box from '@mui/material/Box'
 import Drawer from '@mui/material/Drawer'
@@ -12,11 +13,10 @@ import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight'
-import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const drawerWidth = 240
 
@@ -69,37 +69,40 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   justifyContent: 'flex-end',
 }))
 
-interface drawerProps {
-  openStatus: boolean
-  handleDrawerClose: () => void
-  handleDrawerOpen: () => void
-}
+// interface drawerProps {
+//   openStatus: boolean
+//   handleDrawerToggle: () => void
+// }
 
-export const NavDrawer = (props: drawerProps) => {
+export const NavDrawer = (/**props: drawerProps*/) => {
   const theme = useTheme()
-  const { guid } = useParams()
+  const [openStatus, setOpenStatus] = useState(false)
+
+  const toggleDrawerStatus = () => {
+    setOpenStatus((prevState) => !prevState)
+  }
 
   return (
     <Box
       sx={{
-        display: 'display-listitem',
+        display: 'flex',
         height: 'fit-content',
       }}
     >
       <CssBaseline />
       <AppBar
-        position="sticky"
-        open={props.openStatus}
-        color="transparent"
-        sx={{ width: 'auto' }}
+        position="absolute"
+        open={openStatus}
+        color="primary"
+        // sx={{ width: 'auto' }}
       >
         <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
-            onClick={props.handleDrawerOpen}
+            onClick={toggleDrawerStatus}
             edge="start"
-            sx={{ mr: 2, ...(props.openStatus && { display: 'none' }) }}
+            sx={{ mr: 2, ...(openStatus && { display: 'none' }) }}
           >
             <MenuIcon />
           </IconButton>
@@ -119,10 +122,11 @@ export const NavDrawer = (props: drawerProps) => {
         }}
         variant="persistent"
         anchor="left"
-        open={props.openStatus}
+        open={openStatus}
+        onClose={toggleDrawerStatus}
       >
         <DrawerHeader>
-          <IconButton onClick={props.handleDrawerClose}>
+          <IconButton size="large" onClick={toggleDrawerStatus}>
             <Typography variant="h6" color="inherit" component="div">
               Options
             </Typography>
@@ -135,13 +139,10 @@ export const NavDrawer = (props: drawerProps) => {
         </DrawerHeader>
         <Divider />
         <List>
-          <ListItemLink to="/" primary="Home" />
-          <ListItemLink to="/listing" primary="NASNEWS Rundowns" />
+          {/* <ListItemLink to="/" primary="Home" /> */}
+          <ListItemLink to="/" primary="NASNEWS Rundowns" />
           {/* Global Tables? */}
-          {/* <ListItemLink
-            to={`/rundown/:${guid}`}
-            primary="TitlerService Table"
-          /> */}
+          {/* <ListItemLink to="/dashboard" primary="Dashboard" /> */}
         </List>
       </Drawer>
     </Box>
